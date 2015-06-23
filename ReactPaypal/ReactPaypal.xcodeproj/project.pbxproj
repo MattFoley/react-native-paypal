@@ -23,6 +23,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		32A2D8201B38C9820037584B /* MFLReactNativePayPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2D81F1B38C9820037584B /* MFLReactNativePayPal.m */; };
+		32A2D8321B38C9C30037584B /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D82A1B38C9C30037584B /* libPayPalMobile.a */; };
+		32A2D8341B38D0900037584B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D8331B38D0900037584B /* Accelerate.framework */; };
+		32A2D8361B38D0950037584B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D8351B38D0950037584B /* AudioToolbox.framework */; };
+		32A2D8381B38D09A0037584B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D8371B38D09A0037584B /* AVFoundation.framework */; };
+		32A2D83A1B38D09E0037584B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D8391B38D09E0037584B /* CoreLocation.framework */; };
+		32A2D83C1B38D0A30037584B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D83B1B38D0A30037584B /* CoreMedia.framework */; };
+		32A2D83E1B38D0A70037584B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D83D1B38D0A70037584B /* MessageUI.framework */; };
+		32A2D8401B38D0AC0037584B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D83F1B38D0AC0037584B /* MobileCoreServices.framework */; };
+		32A2D8421B38D0B20037584B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A2D8411B38D0B20037584B /* SystemConfiguration.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +137,30 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		32A2D81E1B38C9820037584B /* MFLReactNativePayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLReactNativePayPal.h; sourceTree = "<group>"; };
 		32A2D81F1B38C9820037584B /* MFLReactNativePayPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLReactNativePayPal.m; sourceTree = "<group>"; };
+		32A2D8221B38C9C30037584B /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		32A2D8231B38C9C30037584B /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		32A2D8241B38C9C30037584B /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		32A2D8251B38C9C30037584B /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		32A2D8261B38C9C30037584B /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		32A2D8271B38C9C30037584B /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		32A2D8281B38C9C30037584B /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		32A2D8291B38C9C30037584B /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		32A2D82A1B38C9C30037584B /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		32A2D82B1B38C9C30037584B /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		32A2D82C1B38C9C30037584B /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		32A2D82D1B38C9C30037584B /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		32A2D82E1B38C9C30037584B /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		32A2D82F1B38C9C30037584B /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		32A2D8301B38C9C30037584B /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		32A2D8311B38C9C30037584B /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		32A2D8331B38D0900037584B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		32A2D8351B38D0950037584B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		32A2D8371B38D09A0037584B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		32A2D8391B38D09E0037584B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		32A2D83B1B38D0A30037584B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		32A2D83D1B38D0A70037584B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		32A2D83F1B38D0AC0037584B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		32A2D8411B38D0B20037584B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +177,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A2D8421B38D0B20037584B /* SystemConfiguration.framework in Frameworks */,
+				32A2D8401B38D0AC0037584B /* MobileCoreServices.framework in Frameworks */,
+				32A2D83E1B38D0A70037584B /* MessageUI.framework in Frameworks */,
+				32A2D83C1B38D0A30037584B /* CoreMedia.framework in Frameworks */,
+				32A2D83A1B38D09E0037584B /* CoreLocation.framework in Frameworks */,
+				32A2D8381B38D09A0037584B /* AVFoundation.framework in Frameworks */,
+				32A2D8361B38D0950037584B /* AudioToolbox.framework in Frameworks */,
+				32A2D8341B38D0900037584B /* Accelerate.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -152,6 +193,7 @@
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				32A2D8321B38C9C30037584B /* libPayPalMobile.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 			);
@@ -265,6 +307,30 @@
 			path = MFLReactNativePayPal;
 			sourceTree = "<group>";
 		};
+		32A2D8211B38C9C30037584B /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				32A2D8221B38C9C30037584B /* CardIO.h */,
+				32A2D8231B38C9C30037584B /* CardIOCreditCardInfo.h */,
+				32A2D8241B38C9C30037584B /* CardIODetectionMode.h */,
+				32A2D8251B38C9C30037584B /* CardIOPaymentViewController.h */,
+				32A2D8261B38C9C30037584B /* CardIOPaymentViewControllerDelegate.h */,
+				32A2D8271B38C9C30037584B /* CardIOUtilities.h */,
+				32A2D8281B38C9C30037584B /* CardIOView.h */,
+				32A2D8291B38C9C30037584B /* CardIOViewDelegate.h */,
+				32A2D82A1B38C9C30037584B /* libPayPalMobile.a */,
+				32A2D82B1B38C9C30037584B /* PayPalConfiguration.h */,
+				32A2D82C1B38C9C30037584B /* PayPalFuturePaymentViewController.h */,
+				32A2D82D1B38C9C30037584B /* PayPalMobile.h */,
+				32A2D82E1B38C9C30037584B /* PayPalOAuthScopes.h */,
+				32A2D82F1B38C9C30037584B /* PayPalPayment.h */,
+				32A2D8301B38C9C30037584B /* PayPalPaymentViewController.h */,
+				32A2D8311B38C9C30037584B /* PayPalProfileSharingViewController.h */,
+			);
+			name = PayPalMobile;
+			path = lib/Paypal/PayPalMobile;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +342,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				32A2D8211B38C9C30037584B /* PayPalMobile */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -301,6 +368,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				32A2D8411B38D0B20037584B /* SystemConfiguration.framework */,
+				32A2D83F1B38D0AC0037584B /* MobileCoreServices.framework */,
+				32A2D83D1B38D0A70037584B /* MessageUI.framework */,
+				32A2D83B1B38D0A30037584B /* CoreMedia.framework */,
+				32A2D8391B38D09E0037584B /* CoreLocation.framework */,
+				32A2D8371B38D09A0037584B /* AVFoundation.framework */,
+				32A2D8351B38D0950037584B /* AudioToolbox.framework */,
+				32A2D8331B38D0900037584B /* Accelerate.framework */,
 				13B07FAE1A68108700A75B9A /* ReactPaypal */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactPaypalTests */,
@@ -616,7 +691,14 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = ReactPaypal;
 			};
 			name = Debug;
@@ -632,7 +714,14 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = ReactPaypal;
 			};
 			name = Release;

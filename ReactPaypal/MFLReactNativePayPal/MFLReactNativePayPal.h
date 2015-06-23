@@ -8,6 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, PayPalEnvironment)
+{
+  kPayPalEnvironmentSandbox,
+  kPayPalEnvironmentProduction,
+  kPayPalEnvironmentSandboxNoNetwork
+};
+
+typedef NS_ENUM(NSInteger, PaymentCompletionStatus)
+{
+  kPayPalPaymentCanceled,
+  kPayPalPaymentCompleted
+};
+
+
 @interface MFLReactNativePayPal : NSObject
 
 @end

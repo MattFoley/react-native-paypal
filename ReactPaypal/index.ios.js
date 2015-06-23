@@ -27,11 +27,17 @@ var ReactPaypal = React.createClass({
     MFLReactNativePayPal.prepareConfigurationForMerchant("Bacon Truck", true, "bacon@bacon.com");
     MFLReactNativePayPal.presentPaymentViewControllerForPreparedPurchase((error, payload) => {
       if (error) {
-        // I should think about returning some errors
-        return;
-      } else {
+         //Handle Error
+         return;
+       } else {
+
         console.log("payload: " + payload);
-      }
+        if (payload.status == 1) {
+           console.log(payload.confirmation);
+        } else {
+           console.log("User cancelled payment");
+        }
+       }
     });
   },
 
@@ -44,7 +50,7 @@ var ReactPaypal = React.createClass({
               Tap To Initiate Paypal Test
             </Text>
             <Text style={styles.instructions}>
-              Use test user "bacon@bacon.com" password "password".
+              Use test user "bacon@react.com" password "Password!".
             </Text>
           </View>
         </TouchableHighlight>

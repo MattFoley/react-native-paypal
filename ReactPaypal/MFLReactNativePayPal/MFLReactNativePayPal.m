@@ -10,6 +10,9 @@
 #import "RCTBridge.h"
 #import "PayPalMobile.h"
 
+NSString * const kPayPalPaymentStatusKey              = @"status";
+NSString * const kPayPalPaymentConfirmationKey        = @"confirmation";
+
 @interface MFLReactNativePayPal () <PayPalPaymentDelegate, RCTBridgeModule>
 
 @property PayPalPayment *payment;
@@ -82,16 +85,18 @@ RCT_EXPORT_METHOD(presentPaymentViewControllerForPreparedPurchase:(RCTResponseSe
 {
   [paymentViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
     if (self.flowCompletedCallback) {
-      self.flowCompletedCallback(@[[NSNull null], @(kPayPalPaymentCanceled)]);
+      self.flowCompletedCallback(@[[NSNull null], @{kPayPalPaymentStatusKey : @(kPayPalPaymentCanceled)}]);
     }
   }];
 }
 
-- (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController didCompletePayment:(PayPalPayment *)completedPayment
+- (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController
+                 didCompletePayment:(PayPalPayment *)completedPayment
 {
   [paymentViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
     if (self.flowCompletedCallback) {
-      self.flowCompletedCallback(@[[NSNull null], @(kPayPalPaymentCompleted)]);
+      self.flowCompletedCallback(@[[NSNull null], @{kPayPalPaymentStatusKey : @(kPayPalPaymentCompleted),
+                                                    kPayPalPaymentConfirmationKey : completedPayment.confirmation}]);
     }
   }];
 }

@@ -4,17 +4,19 @@ Paypal wrapper for React Native
 
 Very basic support currently.
 
+###Integration
+
+Include PayPal as normally, following their directions. After doing that, also drag MFLReactNativePayPal.h and MFLReactNativePayPal.m into your project.
+
 ###Initialization:
 
      MFLReactNativePayPal.initializePaypalEnvironment(<environment>, "<Your client id>");
 
 #####Environment Values that should be used here are declared in MFLReactNativePayPal.h 
 
-  • Sandbox = 0
-  
-  • Production = 1
-  
-  • No Network = 2
+     • Sandbox = 0
+     • Production = 1
+     • No Network = 2
   
 ###Prepare a Payment:
 

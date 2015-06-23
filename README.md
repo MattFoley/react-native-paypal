@@ -1,8 +1,6 @@
 # react-native-paypal
-Paypal wrapper for React Native
 
-
-Very basic support currently.
+Paypal wrapper for React Native, currently only supports the bare minimum of buying a product.
 
 ###Integration
 

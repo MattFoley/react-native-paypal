@@ -10,6 +10,10 @@
     "react-native",
     "ios"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MattFoley/react-native-paypal.git"
+  },
   "dependencies": {
     "react-native": "^0.5.0"
   }

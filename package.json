@@ -1,6 +1,6 @@
 {
   "name": "react-native-paypal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Native PayPal payment screen for React Native",
   "main": "index.js",
   "repository": {
@@ -9,6 +9,7 @@
   },
   "keywords": [
     "react",
+    "react-component",
     "react-native",
     "pay-pal",
     "android"

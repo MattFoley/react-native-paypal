@@ -1,3 +1,3 @@
-[submodule "ReactPaypal/lib/Paypal"]
-	path = ReactPaypal/lib/Paypal
+[submodule "ios/lib/Paypal"]
+	path = ios/lib/Paypal
 	url = git@github.com:paypal/PayPal-iOS-SDK.git

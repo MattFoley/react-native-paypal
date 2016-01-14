@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64976FFC1C47962B00C0178E /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF01C47962B00C0178E /* libCardIO.a */; };
+		64976FFD1C47962B00C0178E /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF11C47962B00C0178E /* libopencv_core.a */; };
+		64976FFE1C47962B00C0178E /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF21C47962B00C0178E /* libopencv_imgproc.a */; };
+		64976FFF1C47962B00C0178E /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF41C47962B00C0178E /* libPayPalMobile.a */; };
 		64D7A23C1C46907F008FCDA3 /* MFLReactNativePayPal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64D7A23B1C46907F008FCDA3 /* MFLReactNativePayPal.h */; };
 		64D7A23E1C46907F008FCDA3 /* MFLReactNativePayPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D7A23D1C46907F008FCDA3 /* MFLReactNativePayPal.m */; };
 /* End PBXBuildFile section */
@@ -25,6 +29,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		64976FE81C47962B00C0178E /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		64976FE91C47962B00C0178E /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		64976FEA1C47962B00C0178E /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		64976FEB1C47962B00C0178E /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		64976FEC1C47962B00C0178E /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		64976FED1C47962B00C0178E /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		64976FEE1C47962B00C0178E /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		64976FEF1C47962B00C0178E /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		64976FF01C47962B00C0178E /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		64976FF11C47962B00C0178E /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		64976FF21C47962B00C0178E /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		64976FF41C47962B00C0178E /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		64976FF51C47962B00C0178E /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		64976FF61C47962B00C0178E /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		64976FF71C47962B00C0178E /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		64976FF81C47962B00C0178E /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		64976FF91C47962B00C0178E /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		64976FFA1C47962B00C0178E /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		64976FFB1C47962B00C0178E /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
 		64D7A2381C46907F008FCDA3 /* libMFLReactNativePayPal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMFLReactNativePayPal.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D7A23B1C46907F008FCDA3 /* MFLReactNativePayPal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFLReactNativePayPal.h; sourceTree = "<group>"; };
 		64D7A23D1C46907F008FCDA3 /* MFLReactNativePayPal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFLReactNativePayPal.m; sourceTree = "<group>"; };
@@ -35,15 +58,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64976FFC1C47962B00C0178E /* libCardIO.a in Frameworks */,
+				64976FFD1C47962B00C0178E /* libopencv_core.a in Frameworks */,
+				64976FFF1C47962B00C0178E /* libPayPalMobile.a in Frameworks */,
+				64976FFE1C47962B00C0178E /* libopencv_imgproc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64976FE71C47962B00C0178E /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				64976FE81C47962B00C0178E /* CardIO.h */,
+				64976FE91C47962B00C0178E /* CardIOCreditCardInfo.h */,
+				64976FEA1C47962B00C0178E /* CardIODetectionMode.h */,
+				64976FEB1C47962B00C0178E /* CardIOPaymentViewController.h */,
+				64976FEC1C47962B00C0178E /* CardIOPaymentViewControllerDelegate.h */,
+				64976FED1C47962B00C0178E /* CardIOUtilities.h */,
+				64976FEE1C47962B00C0178E /* CardIOView.h */,
+				64976FEF1C47962B00C0178E /* CardIOViewDelegate.h */,
+				64976FF01C47962B00C0178E /* libCardIO.a */,
+				64976FF11C47962B00C0178E /* libopencv_core.a */,
+				64976FF21C47962B00C0178E /* libopencv_imgproc.a */,
+			);
+			name = CardIO;
+			path = lib/Paypal/CardIO;
+			sourceTree = "<group>";
+		};
+		64976FF31C47962B00C0178E /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				64976FF41C47962B00C0178E /* libPayPalMobile.a */,
+				64976FF51C47962B00C0178E /* PayPalConfiguration.h */,
+				64976FF61C47962B00C0178E /* PayPalFuturePaymentViewController.h */,
+				64976FF71C47962B00C0178E /* PayPalMobile.h */,
+				64976FF81C47962B00C0178E /* PayPalOAuthScopes.h */,
+				64976FF91C47962B00C0178E /* PayPalPayment.h */,
+				64976FFA1C47962B00C0178E /* PayPalPaymentViewController.h */,
+				64976FFB1C47962B00C0178E /* PayPalProfileSharingViewController.h */,
+			);
+			name = PayPalMobile;
+			path = lib/Paypal/PayPalMobile;
+			sourceTree = "<group>";
+		};
 		64D7A22F1C46907F008FCDA3 = {
 			isa = PBXGroup;
 			children = (
+				64976FE71C47962B00C0178E /* CardIO */,
+				64976FF31C47962B00C0178E /* PayPalMobile */,
 				64D7A23A1C46907F008FCDA3 /* MFLReactNativePayPal */,
 				64D7A2391C46907F008FCDA3 /* Products */,
 			);
@@ -216,6 +280,11 @@
 					"$(SRCROOT)/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/Paypal/CardIO",
+					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -229,6 +298,11 @@
 					"$(inherited)",
 					"$(SRCROOT)/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/Paypal/CardIO",
+					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

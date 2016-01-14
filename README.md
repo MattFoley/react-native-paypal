@@ -152,12 +152,22 @@ iOS
 ---
 
 ### TODO:
+
+* [ ] Refactor & cleanup
 * [ ] Automated tests
 * [ ] Future payment (subscriptions)
 
-### Integration
+### Installation
 
-Install the PayPal-iOS-SDK into `node_modules/react-native-paypal/ios/lib/Paypal`
+Currently you have to install via `npm` from GitHub (or change the version specifier in `package.json` to `zeroseven/react-native-paypal#ios`):
+
+```shell
+npm install --save zeroseven/react-native-paypal#ios
+```
+
+#### Install the PayPal-iOS-SDK
+
+You then have to install the PayPal-iOS-SDK into `node_modules/react-native-paypal/ios/lib/Paypal`
 
 Here's a one-liner to download and unpack version `2.13.0`:
 
@@ -167,41 +177,10 @@ mkdir -p node_modules/react-native-paypal/ios/lib/Paypal && curl -L --progress h
 
 Include PayPal as normally, following their directions. Their integration steps and iOS SDK can be found [here](https://github.com/paypal/PayPal-iOS-SDK). After doing that, also drag MFLReactNativePayPal.h and MFLReactNativePayPal.m into your project.
 
-### Initialization:
+#### Add `MFLReactNativePayPal.xcodeproj`
 
-     var MFLReactNativePayPal = require('NativeModules').MFLReactNativePayPal;
-     MFLReactNativePayPal.initializePaypalEnvironment(<environment>, "<Your client id>");
+Add `node_modules/react-native-paypal/ios/MFLReactNativePayPal.xcodeproj`
+to the `Libraries` group in iOS and link `libMFLReactNativePayPal.a` as described in Step 2 of the
+[React Native Manual Linking docs](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking).
 
-##### Environment Values that should be used here are declared in MFLReactNativePayPal.h
-
-     • Sandbox = 0
-     • Production = 1
-     • No Network = 2
-
-### Prepare a Payment:
-
-     MFLReactNativePayPal.preparePaymentOfAmount(<Amount as a Float>, <Currency Code>, <Short description>);
-     ie: MFLReactNativePayPal.preparePaymentOfAmount(100.00, "USD", "Bacon");
-
-### Prepare Configuration:
-
-     MFLReactNativePayPal.prepareConfigurationForMerchant(<Merchant Name>, <BOOL should accept credit cards>, <User email>);
-     MFLReactNativePayPal.prepareConfigurationForMerchant("Bacon Truck", true, "bacon@bacon.com");
-
-
-### Present the payment flow with a completion handler:
-
-     MFLReactNativePayPal.presentPaymentViewControllerForPreparedPurchase((error, payload) => {
-        if (error) {
-          //Handle Error
-          return;
-        } else {
-
-         console.log("payload: " + payload);
-         if (payload.status == 1) {
-            console.log(payload.confirmation);
-         } else {
-            console.log("User cancelled payment");
-         }
-        }
-     });
+Follow steps 4 and 5 of [the PayPal instalation instructions](https://github.com/paypal/PayPal-iOS-SDK#if-you-dont-use-cocoapods-then), as well as the [additional steps here](https://github.com/paypal/PayPal-iOS-SDK#with-or-without-cocoapods). **This has to be done for the main app, not for the library you included.**

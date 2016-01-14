@@ -152,12 +152,18 @@ iOS
 ---
 
 ### TODO:
-- Automated tests
-- iOS version
-- Future payment (subscriptions)
-Paypal wrapper for React Native, currently only supports the bare minimum of buying a product.
+* [ ] Automated tests
+* [ ] Future payment (subscriptions)
 
 ### Integration
+
+Install the PayPal-iOS-SDK into `node_modules/react-native-paypal/ios/lib/Paypal`
+
+Here's a one-liner to download and unpack version `2.13.0`:
+
+```shell
+mkdir -p node_modules/react-native-paypal/ios/lib/Paypal && curl -L --progress https://github.com/paypal/PayPal-iOS-SDK/archive/2.13.0.tar.gz | tar -xz - -C node_modules/react-native-paypal/ios/lib/Paypal --strip-components=1
+```
 
 Include PayPal as normally, following their directions. Their integration steps and iOS SDK can be found [here](https://github.com/paypal/PayPal-iOS-SDK). After doing that, also drag MFLReactNativePayPal.h and MFLReactNativePayPal.m into your project.
 

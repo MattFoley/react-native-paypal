@@ -25,7 +25,7 @@ NSString * const kPayPalPaymentConfirmationKey        = @"confirmation";
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(initializePaypalEnvironment:(PayPalEnvironment)environment
+RCT_EXPORT_METHOD(initializePaypalEnvironment:(int)environment
                   forClientId:(NSString *)clientId )
 {
   dispatch_async(dispatch_get_main_queue(), ^{

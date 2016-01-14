@@ -286,6 +286,10 @@
 					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -303,6 +307,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib/Paypal/CardIO",
 					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -26,7 +26,7 @@ var functions = {
         PayPal.paymentRequest(payPalParameters, resolve, reject);
       } else {
         MFLReactNativePayPal.initializePaypalEnvironment(payPalParameters.environment, payPalParameters.clientId);
-        MFLReactNativePayPal.preparePaymentOfAmount(parseFloat(payPalParameters.price), payPalParameters.currency, payPalParameters.description);
+        MFLReactNativePayPal.preparePaymentOfAmount(payPalParameters.price, payPalParameters.currency, payPalParameters.description);
         MFLReactNativePayPal.prepareConfigurationForMerchant("Shape A Future", true, "spenden@aktion-europa-hilft.de");
         MFLReactNativePayPal.presentPaymentViewControllerForPreparedPurchase((error, payload) => {
           if (error) {

@@ -4,8 +4,8 @@
  */
 'use strict';
 
-var MFLReactNativePayPal = require('NativeModules').MFLReactNativePayPal;
 var React = require('react-native');
+var MFLReactNativePayPal = React.NativeModules.MFLReactNativePayPal;
 
 var {
   AppRegistry,
@@ -15,14 +15,14 @@ var {
   TouchableHighlight
 } = React;
 
-var ReactPaypal = React.createClass({
-  componentDidMount: function() {
+class ReactPaypal extends React.Component {
+  componentDidMount() {
     console.log("Component did mount");
     MFLReactNativePayPal.initializePaypalEnvironment(0,
       "AWyPKtVl7ac7SOlIscEe-dONGB-oBYav2TwimOgB1FysVGcKneAkj_1O1LV-Vnr0PEeMk5NmweJfIiLm");
-  },
+  }
 
-  _onPressButton: function() {
+  _onPressButton() {
     MFLReactNativePayPal.preparePaymentOfAmount(100.00, "USD", "Bacon");
     MFLReactNativePayPal.prepareConfigurationForMerchant("Bacon Truck", true, "bacon@bacon.com");
     MFLReactNativePayPal.presentPaymentViewControllerForPreparedPurchase((error, payload) => {
@@ -39,9 +39,9 @@ var ReactPaypal = React.createClass({
         }
        }
     });
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <View style={styles.container}>
         <TouchableHighlight onPress={this._onPressButton}>
@@ -57,7 +57,7 @@ var ReactPaypal = React.createClass({
       </View>
     );
   }
-});
+}
 
 var styles = StyleSheet.create({
   container: {

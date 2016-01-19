@@ -9,9 +9,29 @@
 #import "MFLReactNativePayPal.h"
 #import "RCTBridge.h"
 #import "PayPalMobile.h"
+#import "RCTConvert.h"
 
 NSString * const kPayPalPaymentStatusKey              = @"status";
 NSString * const kPayPalPaymentConfirmationKey        = @"confirmation";
+
+@implementation RCTConvert (PaymentCompletionStatus)
+
+RCT_ENUM_CONVERTER(PaymentCompletionStatus, (@{ @"Canceled" : @(kPayPalPaymentCompleted),
+                                                @"Completed"  : @(kPayPalPaymentCanceled)}
+                                              ), kPayPalPaymentCanceled, integerValue)
+
+@end
+
+
+@implementation RCTConvert (PayPalEnvironment)
+
+RCT_ENUM_CONVERTER(PayPalEnvironment, (@{ @"Sandbox" : @(kPayPalEnvironmentSandbox),
+                                          @"Production"  : @(kPayPalEnvironmentProduction),
+                                          @"NoNetwork"  : @(kPayPalEnvironmentSandboxNoNetwork)}
+                                       ), kPayPalEnvironmentSandboxNoNetwork, integerValue)
+
+@end
+
 
 @interface MFLReactNativePayPal () <PayPalPaymentDelegate, RCTBridgeModule>
 
@@ -102,6 +122,16 @@ RCT_EXPORT_METHOD(presentPaymentViewControllerForPreparedPurchase:(RCTResponseSe
 }
 
 #pragma mark Utilities
+
+- (NSDictionary *)constantsToExport
+{
+  return @{ @"Environment" : @{
+                                @"Sandbox" : @(kPayPalEnvironmentSandbox),
+                                @"Production" : @(kPayPalEnvironmentProduction),
+                                @"NoNetwork" : @(kPayPalEnvironmentSandboxNoNetwork),
+                              },
+            };
+}
 
 - (NSString *)stringFromEnvironmentEnum:(PayPalEnvironment)env
 {

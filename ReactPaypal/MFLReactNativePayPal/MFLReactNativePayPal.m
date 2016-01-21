@@ -95,8 +95,9 @@ RCT_EXPORT_METHOD(presentPaymentViewControllerForPreparedPurchase:(RCTResponseSe
       visibleVC = visibleVC.presentedViewController;
     }
   } while (visibleVC.presentedViewController);
-
-  [visibleVC presentViewController:vc animated:YES completion:nil];
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [visibleVC presentViewController:vc animated:YES completion:nil];
+  });
 }
 
 #pragma mark Paypal Delegate

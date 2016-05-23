@@ -58,12 +58,12 @@ RCT_EXPORT_METHOD(initializePaypalEnvironment:(PayPalEnvironment)environment
 
 #pragma mark React Exported Methods
 
-RCT_EXPORT_METHOD(preparePaymentOfAmount:(CGFloat)amount
+RCT_EXPORT_METHOD(preparePaymentOfAmount:(double)amount
                   ofCurrency:(NSString *)currencyCode
                   withDescription:(NSString *)description)
 {
   self.payment = [[PayPalPayment alloc] init];
-  [self.payment setAmount:[[NSDecimalNumber alloc] initWithFloat:amount]];
+  [self.payment setAmount:[[NSDecimalNumber alloc] initWithDouble:amount]];
   [self.payment setCurrencyCode:currencyCode];
   [self.payment setShortDescription:description];
 }

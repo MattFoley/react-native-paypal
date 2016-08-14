@@ -1,12 +1,12 @@
 'use strict';
-var {NativeModules, Platform} = require('react-native')
-var {PayPal, MFLReactNativePayPal} = NativeModules;
+let {NativeModules, Platform} = require('react-native')
+let {PayPal, MFLReactNativePayPal} = NativeModules;
 
-var constants;
+let constants;
 
 if (Platform.OS === 'android') {
   constants = {};
-  var constantNames = Object.keys(PayPal).filter(p => p == p.toUpperCase());
+  let constantNames = Object.keys(PayPal).filter(p => p == p.toUpperCase());
   constantNames.forEach(c => constants[c] = PayPal[c]);
 } else {
   constants = {
@@ -19,7 +19,7 @@ if (Platform.OS === 'android') {
   }
 }
 
-var functions = {
+let functions = {
   paymentRequest(payPalParameters) {
     return new Promise(function(resolve, reject) {
       if (Platform.OS === 'android') {

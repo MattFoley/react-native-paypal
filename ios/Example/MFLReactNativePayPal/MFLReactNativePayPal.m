@@ -18,7 +18,7 @@ NSString * const kPayPalPaymentConfirmationKey        = @"confirmation";
 
 RCT_ENUM_CONVERTER(PaymentCompletionStatus, (@{ @"Canceled" : @(kPayPalPaymentCompleted),
                                                 @"Completed"  : @(kPayPalPaymentCanceled)}
-                                             ), kPayPalPaymentCanceled, integerValue)
+                                              ), kPayPalPaymentCanceled, integerValue)
 
 @end
 
@@ -45,7 +45,7 @@ RCT_ENUM_CONVERTER(PayPalEnvironment, (@{ @"Sandbox" : @(kPayPalEnvironmentSandb
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(initializePaypalEnvironment:(int)environment
+RCT_EXPORT_METHOD(initializePaypalEnvironment:(PayPalEnvironment)environment
                   forClientId:(NSString *)clientId )
 {
   dispatch_async(dispatch_get_main_queue(), ^{
@@ -58,12 +58,12 @@ RCT_EXPORT_METHOD(initializePaypalEnvironment:(int)environment
 
 #pragma mark React Exported Methods
 
-RCT_EXPORT_METHOD(preparePaymentOfAmount:(NSString *)amount
+RCT_EXPORT_METHOD(preparePaymentOfAmount:(double)amount
                   ofCurrency:(NSString *)currencyCode
                   withDescription:(NSString *)description)
 {
   self.payment = [[PayPalPayment alloc] init];
-  [self.payment setAmount:[[NSDecimalNumber alloc] initWithString:amount]];
+  [self.payment setAmount:[[NSDecimalNumber alloc] initWithDouble:amount]];
   [self.payment setCurrencyCode:currencyCode];
   [self.payment setShortDescription:description];
 }
@@ -127,10 +127,10 @@ RCT_EXPORT_METHOD(presentPaymentViewControllerForPreparedPurchase:(RCTResponseSe
 - (NSDictionary *)constantsToExport
 {
   return @{ @"Environment" : @{
-                @"Sandbox" : @(kPayPalEnvironmentSandbox),
-                @"Production" : @(kPayPalEnvironmentProduction),
-                @"NoNetwork" : @(kPayPalEnvironmentSandboxNoNetwork),
-                },
+                                @"Sandbox" : @(kPayPalEnvironmentSandbox),
+                                @"Production" : @(kPayPalEnvironmentProduction),
+                                @"NoNetwork" : @(kPayPalEnvironmentSandboxNoNetwork),
+                              },
             };
 }
 

@@ -1,0 +1,31 @@
+{
+  "name": "react-native-paypal",
+  "version": "1.0.4",
+  "description": "Native PayPal payment screen for React Native",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattFoley/react-native-paypal.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "pay-pal",
+    "android",
+    "ios"
+  ],
+  "author": "iOSGuy <tfallon@mail.depaul.edu> (http://github.com/MattFoley)",
+  "contributors": [
+    "contato@vizir.com.br",
+    "Timo Uhlmann (http://github.com/amiuhle)"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.18.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vizir/react-native-paypal/issues"
+  },
+  "homepage": "https://github.com/vizir/react-native-paypal"
+}

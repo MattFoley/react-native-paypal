@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64976FFC1C47962B00C0178E /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF01C47962B00C0178E /* libCardIO.a */; };
+		64976FFD1C47962B00C0178E /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF11C47962B00C0178E /* libopencv_core.a */; };
+		64976FFE1C47962B00C0178E /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF21C47962B00C0178E /* libopencv_imgproc.a */; };
+		64976FFF1C47962B00C0178E /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64976FF41C47962B00C0178E /* libPayPalMobile.a */; };
+		64D7A23C1C46907F008FCDA3 /* MFLReactNativePayPal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64D7A23B1C46907F008FCDA3 /* MFLReactNativePayPal.h */; };
+		64D7A23E1C46907F008FCDA3 /* MFLReactNativePayPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D7A23D1C46907F008FCDA3 /* MFLReactNativePayPal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64D7A2361C46907F008FCDA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				64D7A23C1C46907F008FCDA3 /* MFLReactNativePayPal.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		64976FE81C47962B00C0178E /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		64976FE91C47962B00C0178E /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		64976FEA1C47962B00C0178E /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		64976FEB1C47962B00C0178E /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		64976FEC1C47962B00C0178E /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		64976FED1C47962B00C0178E /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		64976FEE1C47962B00C0178E /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		64976FEF1C47962B00C0178E /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		64976FF01C47962B00C0178E /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		64976FF11C47962B00C0178E /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		64976FF21C47962B00C0178E /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		64976FF41C47962B00C0178E /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		64976FF51C47962B00C0178E /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		64976FF61C47962B00C0178E /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		64976FF71C47962B00C0178E /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		64976FF81C47962B00C0178E /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		64976FF91C47962B00C0178E /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		64976FFA1C47962B00C0178E /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		64976FFB1C47962B00C0178E /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		64D7A2381C46907F008FCDA3 /* libMFLReactNativePayPal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMFLReactNativePayPal.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D7A23B1C46907F008FCDA3 /* MFLReactNativePayPal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFLReactNativePayPal.h; sourceTree = "<group>"; };
+		64D7A23D1C46907F008FCDA3 /* MFLReactNativePayPal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFLReactNativePayPal.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64D7A2351C46907F008FCDA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64976FFC1C47962B00C0178E /* libCardIO.a in Frameworks */,
+				64976FFD1C47962B00C0178E /* libopencv_core.a in Frameworks */,
+				64976FFF1C47962B00C0178E /* libPayPalMobile.a in Frameworks */,
+				64976FFE1C47962B00C0178E /* libopencv_imgproc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64976FE71C47962B00C0178E /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				64976FE81C47962B00C0178E /* CardIO.h */,
+				64976FE91C47962B00C0178E /* CardIOCreditCardInfo.h */,
+				64976FEA1C47962B00C0178E /* CardIODetectionMode.h */,
+				64976FEB1C47962B00C0178E /* CardIOPaymentViewController.h */,
+				64976FEC1C47962B00C0178E /* CardIOPaymentViewControllerDelegate.h */,
+				64976FED1C47962B00C0178E /* CardIOUtilities.h */,
+				64976FEE1C47962B00C0178E /* CardIOView.h */,
+				64976FEF1C47962B00C0178E /* CardIOViewDelegate.h */,
+				64976FF01C47962B00C0178E /* libCardIO.a */,
+				64976FF11C47962B00C0178E /* libopencv_core.a */,
+				64976FF21C47962B00C0178E /* libopencv_imgproc.a */,
+			);
+			name = CardIO;
+			path = lib/Paypal/CardIO;
+			sourceTree = "<group>";
+		};
+		64976FF31C47962B00C0178E /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				64976FF41C47962B00C0178E /* libPayPalMobile.a */,
+				64976FF51C47962B00C0178E /* PayPalConfiguration.h */,
+				64976FF61C47962B00C0178E /* PayPalFuturePaymentViewController.h */,
+				64976FF71C47962B00C0178E /* PayPalMobile.h */,
+				64976FF81C47962B00C0178E /* PayPalOAuthScopes.h */,
+				64976FF91C47962B00C0178E /* PayPalPayment.h */,
+				64976FFA1C47962B00C0178E /* PayPalPaymentViewController.h */,
+				64976FFB1C47962B00C0178E /* PayPalProfileSharingViewController.h */,
+			);
+			name = PayPalMobile;
+			path = lib/Paypal/PayPalMobile;
+			sourceTree = "<group>";
+		};
+		64D7A22F1C46907F008FCDA3 = {
+			isa = PBXGroup;
+			children = (
+				64976FE71C47962B00C0178E /* CardIO */,
+				64976FF31C47962B00C0178E /* PayPalMobile */,
+				64D7A23A1C46907F008FCDA3 /* MFLReactNativePayPal */,
+				64D7A2391C46907F008FCDA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64D7A2391C46907F008FCDA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64D7A2381C46907F008FCDA3 /* libMFLReactNativePayPal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64D7A23A1C46907F008FCDA3 /* MFLReactNativePayPal */ = {
+			isa = PBXGroup;
+			children = (
+				64D7A23B1C46907F008FCDA3 /* MFLReactNativePayPal.h */,
+				64D7A23D1C46907F008FCDA3 /* MFLReactNativePayPal.m */,
+			);
+			path = MFLReactNativePayPal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64D7A2371C46907F008FCDA3 /* MFLReactNativePayPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D7A2411C46907F008FCDA3 /* Build configuration list for PBXNativeTarget "MFLReactNativePayPal" */;
+			buildPhases = (
+				64D7A2341C46907F008FCDA3 /* Sources */,
+				64D7A2351C46907F008FCDA3 /* Frameworks */,
+				64D7A2361C46907F008FCDA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFLReactNativePayPal;
+			productName = MFLReactNativePayPal;
+			productReference = 64D7A2381C46907F008FCDA3 /* libMFLReactNativePayPal.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64D7A2301C46907F008FCDA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					64D7A2371C46907F008FCDA3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 64D7A2331C46907F008FCDA3 /* Build configuration list for PBXProject "MFLReactNativePayPal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64D7A22F1C46907F008FCDA3;
+			productRefGroup = 64D7A2391C46907F008FCDA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64D7A2371C46907F008FCDA3 /* MFLReactNativePayPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64D7A2341C46907F008FCDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D7A23E1C46907F008FCDA3 /* MFLReactNativePayPal.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		64D7A23F1C46907F008FCDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64D7A2401C46907F008FCDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64D7A2421C46907F008FCDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/Paypal/CardIO",
+					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		64D7A2431C46907F008FCDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/Paypal/CardIO",
+					"$(PROJECT_DIR)/lib/Paypal/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64D7A2331C46907F008FCDA3 /* Build configuration list for PBXProject "MFLReactNativePayPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D7A23F1C46907F008FCDA3 /* Debug */,
+				64D7A2401C46907F008FCDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D7A2411C46907F008FCDA3 /* Build configuration list for PBXNativeTarget "MFLReactNativePayPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D7A2421C46907F008FCDA3 /* Debug */,
+				64D7A2431C46907F008FCDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64D7A2301C46907F008FCDA3 /* Project object */;
+}

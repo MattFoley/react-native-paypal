@@ -85,71 +85,71 @@ Android
 
 1. Add react-navive-paypal to your project
 
-``` bash
-npm install --save react-native-paypal
-```
+  ``` bash
+  npm install --save react-native-paypal
+  ```
 
 2. Add the following to android/app/build.gradle
 
-``` groovy
-dependencies {
-    // ...
-    compile project(':react-native-paypal')
-}
-```
+  ``` groovy
+  dependencies {
+      // ...
+      compile project(':react-native-paypal')
+  }
+  ```
 
 3. Add the following to android/settings.gradle
 
-``` groovy
-include ':react-native-paypal'
-project(':react-native-paypal').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-paypal/android')
-```
+  ``` groovy
+  include ':react-native-paypal'
+  project(':react-native-paypal').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-paypal/android')
+  ```
 
 4. Edit android/src/.../MainActivity.java
 
-``` java
-// ...
-import br.com.vizir.rn.paypal.PayPalPackage; // <--
-import br.com.vizir.rn.paypal.PayPal; // <--
-import android.content.Intent; // <--
+  ``` java
+  // ...
+  import br.com.vizir.rn.paypal.PayPalPackage; // <--
+  import br.com.vizir.rn.paypal.PayPal; // <--
+  import android.content.Intent; // <--
 
-public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
-    // ...
-    private static final int PAY_PAL_REQUEST_ID = 9; // <-- Can be any unique number
-    private PayPalPackage payPalPackage; // <--
+  public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
+      // ...
+      private static final int PAY_PAL_REQUEST_ID = 9; // <-- Can be any unique number
+      private PayPalPackage payPalPackage; // <--
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // ...
-        payPalPackage = new PayPalPackage(this, PAY_PAL_REQUEST_ID); // <--
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          // ...
+          payPalPackage = new PayPalPackage(this, PAY_PAL_REQUEST_ID); // <--
 
-        mReactInstanceManager = ReactInstanceManager.builder()
-                .setApplication(getApplication())
-                .setBundleAssetName("index.android.bundle")
-                .setJSMainModuleName("index.android")
-                .addPackage(new MainReactPackage())
-                // ...
-                .addPackage(payPalPackage) // <--
-                .setUseDeveloperSupport(BuildConfig.DEBUG)
-                .setInitialLifecycleState(LifecycleState.RESUMED)
-                .build();
-        // ...
-    }
+          mReactInstanceManager = ReactInstanceManager.builder()
+                  .setApplication(getApplication())
+                  .setBundleAssetName("index.android.bundle")
+                  .setJSMainModuleName("index.android")
+                  .addPackage(new MainReactPackage())
+                  // ...
+                  .addPackage(payPalPackage) // <--
+                  .setUseDeveloperSupport(BuildConfig.DEBUG)
+                  .setInitialLifecycleState(LifecycleState.RESUMED)
+                  .build();
+          // ...
+      }
 
-    // ...
+      // ...
 
-    @Override
-    public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-       super.onActivityResult(requestCode, resultCode, data);
-       if (requestCode == PAY_PAL_REQUEST_ID) {
-           payPalPackage.handleActivityResult(requestCode, resultCode, data); // <--
-       } else {
-           otherModulesHandlers(requestCode, resultCode, data);
-       }
-    }
-}
-```
+      @Override
+      public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+         super.onActivityResult(requestCode, resultCode, data);
+         if (requestCode == PAY_PAL_REQUEST_ID) {
+             payPalPackage.handleActivityResult(requestCode, resultCode, data); // <--
+         } else {
+             otherModulesHandlers(requestCode, resultCode, data);
+         }
+      }
+  }
+  ```
 
 iOS
 ---
